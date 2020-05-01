@@ -1,0 +1,29 @@
+{
+  "name": "jade-course-server",
+  "version": "1.0.0",
+  "description": "provide course server for jade community",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EasonAndLily/jade-course-server.git"
+  },
+  "keywords": [
+    "jade",
+    "course",
+    "server",
+    "node"
+  ],
+  "author": "Eason",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EasonAndLily/jade-course-server/issues"
+  },
+  "homepage": "https://github.com/EasonAndLily/jade-course-server#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
