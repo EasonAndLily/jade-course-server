@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "npm test"
   },
   "repository": {
@@ -26,5 +27,8 @@
   "homepage": "https://github.com/EasonAndLily/jade-course-server#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
   }
 }
