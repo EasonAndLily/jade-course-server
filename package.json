@@ -17,6 +17,7 @@
     "server",
     "node"
   ],
+  "type": "module",
   "author": "Eason",
   "license": "MIT",
   "bugs": {
