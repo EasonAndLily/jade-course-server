@@ -4,8 +4,8 @@
   "description": "provide course server for jade community",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
+    "start": "node index.js --port=3333",
+    "dev": "nodemon index.js --port=3333",
     "test": "jest"
   },
   "repository": {
@@ -26,14 +26,15 @@
   },
   "homepage": "https://github.com/EasonAndLily/jade-course-server#readme",
   "dependencies": {
-    "express": "^4.17.1",
-    "jest": "^25.5.4",
-    "supertest": "^4.0.2",
     "@babel/core": "^7.8.6",
     "@babel/preset-env": "^7.8.6",
     "@babel/register": "^7.8.6",
     "@types/jest": "^25.1.3",
-    "babel-jest": "^25.1.0"
+    "babel-jest": "^25.1.0",
+    "express": "^4.17.1",
+    "jest": "^25.5.4",
+    "supertest": "^4.0.2",
+    "yargs": "^15.3.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.3"

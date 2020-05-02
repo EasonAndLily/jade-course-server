@@ -1,13 +1,16 @@
 import express from 'express';
 import Router from './src/router.js';
+import yargs from 'yargs';
 
 const app = express();
-const port = 3333;
-
 new Router(app);
 
-app.listen(port, () =>
-  console.log(`Jade course server listening at http://localhost:${port}`)
-);
+const argv = yargs.argv;
+const port = argv.port;
+if (port) {
+  app.listen(port, () =>
+    console.log(`Jade course server listening at http://localhost:${port}`)
+  );
+}
 
 export default app;
