@@ -9,3 +9,5 @@ new Router(app);
 app.listen(port, () =>
   console.log(`Jade course server listening at http://localhost:${port}`)
 );
+
+export default app;
