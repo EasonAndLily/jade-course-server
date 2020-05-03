@@ -17,7 +17,8 @@ const queryAllCourses = function () {
   return Course.find({}).exec();
 };
 
-export default {
-  queryAllCourses: queryAllCourses,
-  insertCourse: insertCourse,
+const findCourseById = function (id) {
+  return Course.findById(id).exec();
 };
+
+export { queryAllCourses, insertCourse, findCourseById };

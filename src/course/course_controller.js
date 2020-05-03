@@ -1,13 +1,14 @@
 import express from 'express';
 const router = express.Router();
-import course from './course.js';
+import { queryAllCourses, findCourseById } from './course.js';
 
-const getCourse = function (req, res) {
-  course.insertCourse();
-  res.send('Hello jade' + req.params.id);
+const getCourse = async function (req, res) {
+  const course = await findCourseById(req.params.id);
+  res.json(course);
 };
+
 const getCourses = async function (req, res) {
-  const courses = await course.queryAllCourses();
+  const courses = await queryAllCourses();
   res.json(courses);
 };
 
