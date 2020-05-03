@@ -1,6 +1,13 @@
 import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 
+const growthSchema = new Schema({
+  title: String,
+  name: String,
+  iamge: String,
+  brief: String,
+});
+
 const lessionSchema = new Schema({
   name: String,
   type: String,
@@ -17,8 +24,10 @@ const sectionSchema = new Schema({
 const courseSchema = new Schema({
   title: String,
   subTitle: String,
+  poster: String,
   intro: String,
   gains: [String],
+  growth: [growthSchema],
   sections: [sectionSchema],
 });
 
