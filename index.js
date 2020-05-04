@@ -4,24 +4,27 @@ import yargs from 'yargs';
 import mongoose from 'mongoose';
 import cors from 'cors';
 
+const argv = yargs.argv;
 const app = express();
 app.use(cors());
 new Router(app);
 
-mongoose.connect('mongodb://localhost:27017/jade', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+const connectDb = argv.connectDb;
+if (connectDb) {
+  mongoose.connect('mongodb://localhost:27017/jade', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
 
-mongoose.connection.on(
-  'error',
-  console.error.bind(console, 'connection error:')
-);
-mongoose.connection.once('open', function () {
-  console.log('Connect mongodb successfully!');
-});
+  mongoose.connection.on(
+    'error',
+    console.error.bind(console, 'connection error:')
+  );
+  mongoose.connection.once('open', function () {
+    console.log('Connect mongodb successfully!');
+  });
+}
 
-const argv = yargs.argv;
 const port = argv.port;
 if (port) {
   app.listen(port, () =>
