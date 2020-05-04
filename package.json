@@ -4,9 +4,9 @@
   "description": "provide course server for jade community",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js --port=3333 --connectDb=true",
-    "dev": "nodemon index.js --port=3333 --connectDb=trues",
-    "test": "jest"
+    "start": "ENV=pro node index.js --port=3333",
+    "dev": "ENV=dev nodemon index.js --port=3333",
+    "test": "ENV=test jest"
   },
   "repository": {
     "type": "git",

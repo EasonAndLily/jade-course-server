@@ -5,12 +5,12 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 
 const argv = yargs.argv;
+const ENV = process.env.ENV;
 const app = express();
 app.use(cors());
 new Router(app);
 
-const connectDb = argv.connectDb;
-if (connectDb) {
+if (ENV === 'pro' || ENV === 'dev') {
   mongoose.connect('mongodb://localhost:27017/jade', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -26,7 +26,7 @@ if (connectDb) {
 }
 
 const port = argv.port;
-if (port) {
+if (ENV !== 'test' && port) {
   app.listen(port, () =>
     console.log(`Jade course server listening at http://localhost:${port}`)
   );
