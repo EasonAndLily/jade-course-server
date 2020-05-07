@@ -14,7 +14,7 @@ test('test find a course api', async () => {
     intro:
       '本教程为Java入门第一季，欢迎来到精彩的Java编程世界！Java语言已经成为当前软件开发行业中主流的开发语言。本教程将介绍Java环境搭建、工具使用、基础语法。带领大家一步一步的踏入Java达人殿堂！Let’s go!',
   };
-  findCourseById.mockImplementation((id) => course);
+  findCourseById.mockImplementation(() => course);
 
   const res = await request(app).get('/courses/123');
   expect(res.statusCode).toBe(200);
@@ -48,7 +48,7 @@ test('test find a lession api', async () => {
     content:
       '本教程为Java入门第一季，欢迎来到精彩的Java编程世界！Java语言已经成为当前软件开发行业中主流的开发语言。本教程将介绍Java环境搭建、工具使用、基础语法。带领大家一步一步的踏入Java达人殿堂！Let’s go!',
   };
-  findLessionById.mockImplementation((id) => lession);
+  findLessionById.mockImplementation(() => lession);
 
   const res = await request(app).get('/lessions/123');
   expect(res.statusCode).toBe(200);
