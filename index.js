@@ -8,6 +8,7 @@ const argv = yargs.argv;
 const ENV = process.env.ENV;
 const app = express();
 app.use(cors());
+app.use(express.json());
 new Router(app);
 
 if (ENV === 'pro' || ENV === 'dev') {
