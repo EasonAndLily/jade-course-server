@@ -8,11 +8,8 @@ const findLessionById = function (id) {
   return Lession.findById(id).exec();
 };
 
-const insertLession = async function (lession) {
-  const content = await getMarkdownStr(
-    'https://raw.githubusercontent.com/EasonAndLily/far/master/README.md'
-  );
-  console.log(lession);
+const insertLession = async function (lession, url) {
+  const content = await getMarkdownStr(url);
   lession.content = content;
   return Lession.create(lession);
 };
