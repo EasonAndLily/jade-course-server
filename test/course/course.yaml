@@ -1,0 +1,63 @@
+title: Pyton入门基础教程
+subTitle: 入门级教程，面向零基础学员
+poster: https://icon.qiantucdn.com/20200429/29970def500796ac35b3538ecd8da9d32
+intro: 本教程为Python入门第一季，欢迎来到精彩的Java编程世界！Java语言已经成为当前软件开发行业中主流的开发语言。本教程将介绍Java环境搭建、工具使用、基础语法。带领大家一步一步的踏入Java达人殿堂！Let’s go!
+gains:
+  - 零基础入门Java开发
+  - 储备基本的编程思维
+  - 初识面向对象的思维模式
+  - 知道Java8提供的API
+sections:
+  - lessions:
+      - name: 搭建Java开发环境
+        url: https://raw.githubusercontent.com/skill-courses/DbTrainingCamp_MySQL/master/DbBasics/2.MySQL%E6%A6%82%E8%BF%B0.md
+      - name: 变量与数据类型
+        url: https://raw.githubusercontent.com/skill-courses/DbTrainingCamp_MySQL/master/DbBasics/5.%E6%A3%80%E7%B4%A2%E6%95%B0%E6%8D%AE.md
+      - name: Java运算符
+        url: https://github.com/skill-courses/DbTrainingCamp_MySQL/blob/master/DbBasics/6.%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%88%A0%E6%94%B9%E6%93%8D%E4%BD%9C.md
+    name: 第一章：Java基础语法
+    order: 1
+  - lessions:
+      - name: 搭建Java开发环境
+        url: https://raw.githubusercontent.com/skill-courses/DbTrainingCamp_MySQL/master/DbBasics/2.MySQL%E6%A6%82%E8%BF%B0.md
+      - name: 变量与数据类型
+        url: https://raw.githubusercontent.com/skill-courses/DbTrainingCamp_MySQL/master/DbBasics/5.%E6%A3%80%E7%B4%A2%E6%95%B0%E6%8D%AE.md
+      - name: Java运算符
+        url: https://github.com/skill-courses/DbTrainingCamp_MySQL/blob/master/DbBasics/6.%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%88%A0%E6%94%B9%E6%93%8D%E4%BD%9C.md
+    name: 第二章：面向对象编程
+    order: 2
+  - lessions:
+      - name: 搭建Java开发环境
+        url: https://raw.githubusercontent.com/skill-courses/DbTrainingCamp_MySQL/master/DbBasics/2.MySQL%E6%A6%82%E8%BF%B0.md
+      - name: 变量与数据类型
+        url: https://raw.githubusercontent.com/skill-courses/DbTrainingCamp_MySQL/master/DbBasics/5.%E6%A3%80%E7%B4%A2%E6%95%B0%E6%8D%AE.md
+      - name: Java运算符
+        url: https://github.com/skill-courses/DbTrainingCamp_MySQL/blob/master/DbBasics/6.%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%88%A0%E6%94%B9%E6%93%8D%E4%BD%9C.md
+    name: 第三章：java基础进阶
+    order: 3
+  - lessions:
+      - name: 搭建Java开发环境
+        url: https://raw.githubusercontent.com/skill-courses/DbTrainingCamp_MySQL/master/DbBasics/2.MySQL%E6%A6%82%E8%BF%B0.md
+      - name: 变量与数据类型
+        url: https://raw.githubusercontent.com/skill-courses/DbTrainingCamp_MySQL/master/DbBasics/5.%E6%A3%80%E7%B4%A2%E6%95%B0%E6%8D%AE.md
+      - name: Java运算符
+        url: https://github.com/skill-courses/DbTrainingCamp_MySQL/blob/master/DbBasics/6.%E6%95%B0%E6%8D%AE%E5%A2%9E%E5%88%A0%E6%94%B9%E6%93%8D%E4%BD%9C.md
+    name: 第四章：Java8 API
+    order: 2
+growth:
+  - title: 第一步：1周
+    name: Python基础语法
+    image: baby
+    brief: 此阶段将为你你打造高效的Java开发环境，学会使用Java开发利器，初识Java基础语法
+  - title: 第二步：2周
+    name: 面向对象编程
+    image: teenager
+    brief: 此阶段你将掌握Java面向对象的基础语法，学会用面向对象的思维方式思考问题，解决问题
+  - title: 第三步：2周
+    name: Java语法进阶
+    image: student
+    brief: 此阶段你将掌握Java面向对象的基础语法，学会用面向对象的思维方式思考问题，解决问题
+  - title: 第四步：2周
+    name: Java8 API
+    image: gradfather
+    brief: 此阶段你将掌握Java面向对象的基础语法，学会用面向对象的思维方式思考问题，解决问题
