@@ -1,17 +1,20 @@
 import express from 'express';
 const router = express.Router();
-import { queryAllCourses, findCourseById } from './course.js';
+import { createCourse, getCourse, getCourses } from './course_service.js';
 
-const getCourse = async function (req, res) {
-  const course = await findCourseById(req.params.id);
-  res.json(course);
-};
-
-const getCourses = async function (req, res) {
-  const courses = await queryAllCourses();
+router.get('/', async (req, res) => {
+  const courses = await getCourses();
   res.json(courses);
-};
+});
 
-router.get('/', getCourses).get('/:id', getCourse);
+router.get('/:id', async (req, res) => {
+  const course = await getCourse(req.params.id);
+  res.json(course);
+});
+
+router.post('/', async (req, res) => {
+  const course = await createCourse(req.body.url);
+  res.json(course);
+});
 
 export default router;
